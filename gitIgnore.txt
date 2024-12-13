@@ -1,0 +1,12 @@
+有关 .gitignore文件
+规则：
+1. # 为注释符
+2. liunx通配符 
+   2.1 * 任意多个字符
+   2.2 ？一个字符
+   ...
+3. ! 之后的内容表实例外 如: *.txt !bb.txt 在忽略所有txt中，不能忽略bb.txt文件 该文件依然要上传
+4. / 忽略文件目录
+   4.1 temp/ 忽略temp文件目录下的所有文件
+   4.2 /temp 忽略与temp同级的文件目录下的所有文件，但不包括temp文件
+5. doc/*.txt 忽略 doc/note.txt 但不会忽略doc/server/arc.txt 
